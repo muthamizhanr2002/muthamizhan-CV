@@ -1,61 +1,561 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muthamizhan R | Digital Marketer</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Muthamizhan R — Digital Marketer & Creative Thinker</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/index.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.0/400.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.0/600.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.0/700.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.0.0/800.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<header>
-<h1>Muthamizhan R</h1>
-<h2>Designer & Digital Marketer</h2>
-<p>SEO • SEM • Google Ads • Meta Ads • Content Marketing</p>
-<a href="mailto:muthuravichandran47@gmail.com">Contact Me</a>
-</header>
 
-<section>
-<h2>About Me</h2>
-<p>Creative and results-driven Digital Marketing Specialist with 3+ years of experience driving online growth and brand awareness. Skilled in executing multi-channel digital strategies, including SEO, SEM, content marketing, and social media. Proven ability to increase traffic,
-generate qualified leads, and optimize ad spend.Passionate about using data to improve marketing performance and deliver measurable results.</p>
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<!-- Navbar -->
+<nav class="nav-wrap">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-2 text-xl font-bold" style="font-family:'Poppins';">
+      <span class="gradient-text">M</span><span>Muthamizhan</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="https://wa.me/917639642940" class="hidden md:inline-flex btn-primary" style="padding: 10px 22px; font-size: 14px;">
+      Hire Me <i class="fas fa-arrow-right"></i>
+    </a>
+    <button class="md:hidden text-2xl" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="toggleMenu()">Home</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#skills" onclick="toggleMenu()">Skills</a>
+  <a href="#experience" onclick="toggleMenu()">Experience</a>
+  <a href="#projects" onclick="toggleMenu()">Projects</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="max-w-7xl mx-auto px-6 w-full">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for freelance work
+        </div>
+        <h1 class="section-title" style="margin-top:24px;">
+          Hi, I'm <span class="gradient-text">Muthamizhan</span><br/>
+          Digital Marketer & Creative Thinker
+        </h1>
+        <p class="section-subtitle" style="margin-bottom:32px;">
+          Creative and results-driven Digital Marketing Specialist with 3+ years of experience driving online growth, brand awareness, and measurable business results through data-backed strategies.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://wa.me/917639642940" class="btn-primary">
+            Let's Talk <i class="fas fa-paper-plane"></i>
+          </a>
+          <a href="#projects" class="btn-ghost">
+            View Projects <i class="fas fa-eye"></i>
+          </a>
+        </div>
+        <div class="flex items-center gap-6 mt-10">
+          <a href="https://www.linkedin.com/in/muthamizhanr/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/muthamizhan" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/confused_thinker404/" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:muthuravichandran47@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="relative" data-aos="fade-left">
+        <div class="hero-img-wrap">
+          <img src="https://media.licdn.com/dms/image/v2/D5603AQHDu3Dp3dFdWA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714245926788?e=1785974400&v=beta&t=jGLoMonTTkQZCAogoVtkiOnVqFibLRuYrVuZa4NVqLk" alt="Muthamizhan R" class="hero-img" />
+        </div>
+        <div class="floating-tag tag-1">
+          <div class="icon" style="background:rgba(168,85,247,0.2);color:#d8b4fe;"><i class="fab fa-google"></i></div>
+          <div>
+            <div style="font-weight:600;">Google Ads</div>
+            <div style="font-size:11px;color:var(--muted);">Certified</div>
+          </div>
+        </div>
+        <div class="floating-tag tag-2">
+          <div class="icon" style="background:rgba(236,72,153,0.2);color:#f9a8d4;"><i class="fas fa-chart-line"></i></div>
+          <div>
+            <div style="font-weight:600;">3,000+ Leads</div>
+            <div style="font-size:11px;color:var(--muted);">Generated</div>
+          </div>
+        </div>
+        <div class="floating-tag tag-3">
+          <div class="icon" style="background:rgba(34,211,238,0.2);color:#67e8f9;"><i class="fas fa-bullseye"></i></div>
+          <div>
+            <div style="font-weight:600;">CPL ↓ 30%</div>
+            <div style="font-size:11px;color:var(--muted);">Optimized</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>Skills</h2>
-<ul>
-<li>Digital Marketing: SEO, SEM, Google Ads, Meta Ads, Email Marketing</li>
-<li>Front End: HTML5, CSS, Bootstrap, JavaScript</li>
-<li>Design: Posters, Banners, Brochures, Social Media Creatives</li>
-<li>Video Editing: Commercial Intros, Reels, Social Ads</li>
-</ul>
+<!-- About -->
+<section id="about">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Turning Data Into <span class="gradient-text">Growth Stories</span></h2>
+        <p class="section-subtitle" style="margin-bottom:20px;">
+          I'm a passionate digital marketer and designer from Nagapattinam, India, with a BSc in Computer Science. I blend creativity with analytics to build campaigns that don't just look good — they perform.
+        </p>
+        <p style="color:var(--muted); line-height:1.8; margin-bottom:24px;">
+          From running full-funnel ad campaigns for SaaS products to crafting viral social content for diverse brands, I've helped businesses scale through SEO, SEM, Meta & Google Ads, and conversion-focused design.
+        </p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle" style="color:var(--primary);"></i>
+            <span>SEO & SEM Expert</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle" style="color:var(--primary);"></i>
+            <span>Meta & Google Ads</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle" style="color:var(--primary);"></i>
+            <span>Content Strategy</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle" style="color:var(--primary);"></i>
+            <span>UI & Visual Design</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle" style="color:var(--primary);"></i>
+            <span>Video Editing</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-check-circle" style="color:var(--primary);"></i>
+            <span>Analytics & GA4</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats-grid" data-aos="fade-left">
+        <div class="stat-card">
+          <div class="stat-value" data-count="3">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" data-count="15">0</div>
+          <div class="stat-label">Brands Handled</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" data-count="3000">0</div>
+          <div class="stat-label">Leads Generated</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" data-count="5">0</div>
+          <div class="stat-label">Industries Served</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>Experience</h2>
-<h3>Digital Marketer - POSNIC | Mar 2022 - May 2025</h3>
-<p>Managed campaigns, lead generation, SEO growth, tracking, analytics and marketing strategies for GST billing SaaS.</p>
-
-<h3>Content Creator - S-INFOTECH | Jun 2024 - Sep 2024</h3>
-<p>Created social media designs, client creatives, reels covers and brand content.</p>
+<!-- Skills -->
+<section id="skills">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <span class="section-label" style="justify-content:center;">What I Do</span>
+      <h2 class="section-title">My <span class="gradient-text">Expertise</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">A versatile skill set spanning marketing, design, and development — built to deliver end-to-end digital solutions.</p>
+    </div>
+    <div class="skill-grid">
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="skill-icon" style="background:rgba(168,85,247,0.15);color:#d8b4fe;">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Digital Marketing</h3>
+        <p style="color:var(--muted);font-size:14px;line-height:1.6;">Data-driven campaigns that drive growth, leads, and conversions across channels.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">SEO</span>
+          <span class="skill-tag">SEM</span>
+          <span class="skill-tag">Google Ads</span>
+          <span class="skill-tag">Meta Ads</span>
+          <span class="skill-tag">Email Marketing</span>
+          <span class="skill-tag">GA4</span>
+        </div>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-icon" style="background:rgba(236,72,153,0.15);color:#f9a8d4;">
+          <i class="fas fa-palette"></i>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Graphic Design</h3>
+        <p style="color:var(--muted);font-size:14px;line-height:1.6;">Eye-catching visuals that tell brand stories and boost engagement.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Brochures</span>
+          <span class="skill-tag">Banners</span>
+          <span class="skill-tag">Mockups</span>
+          <span class="skill-tag">Posters</span>
+          <span class="skill-tag">Social Media</span>
+        </div>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-icon" style="background:rgba(34,211,238,0.15);color:#67e8f9;">
+          <i class="fas fa-video"></i>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Video Editing</h3>
+        <p style="color:var(--muted);font-size:14px;line-height:1.6;">Dynamic video content from intros to social ads that captivate audiences.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Commercials</span>
+          <span class="skill-tag">Vlogs</span>
+          <span class="skill-tag">Social Ads</span>
+          <span class="skill-tag">Reels</span>
+          <span class="skill-tag">Sound FX</span>
+        </div>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="skill-icon" style="background:rgba(168,85,247,0.15);color:#d8b4fe;">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Front-End Dev</h3>
+        <p style="color:var(--muted);font-size:14px;line-height:1.6;">Clean, responsive code that brings designs to life on the web.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-icon" style="background:rgba(236,72,153,0.15);color:#f9a8d4;">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Social Media</h3>
+        <p style="color:var(--muted);font-size:14px;line-height:1.6;">Strategic content creation and community management for brand growth.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Instagram</span>
+          <span class="skill-tag">Facebook</span>
+          <span class="skill-tag">Content Calendar</span>
+          <span class="skill-tag">Analytics</span>
+        </div>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-icon" style="background:rgba(34,211,238,0.15);color:#67e8f9;">
+          <i class="fas fa-chart-pie"></i>
+        </div>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Campaign Optimization</h3>
+        <p style="color:var(--muted);font-size:14px;line-height:1.6;">A/B testing, UTM tracking, and data analysis for maximum ROI.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">A/B Testing</span>
+          <span class="skill-tag">UTM</span>
+          <span class="skill-tag">Automation</span>
+          <span class="skill-tag">ROI</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>Achievements</h2>
-<ul>
-<li>Generated 3000+ leads in 6 months</li>
-<li>Reduced CPL by 30%</li>
-<li>Improved web traffic by 60%</li>
-<li>Handled 15+ client brands</li>
-</ul>
+<!-- Experience -->
+<section id="experience">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <span class="section-label" style="justify-content:center;">Career Journey</span>
+      <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">A track record of driving measurable results for SaaS, agencies, and diverse industries.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-up">
+        <span class="timeline-date">MAR 2022 – MAY 2025</span>
+        <h3 style="font-size:24px;font-weight:700;margin-bottom:4px;">Digital Marketer</h3>
+        <p style="color:var(--primary);margin-bottom:16px;"><i class="fas fa-building"></i> POSNIC · Nagapattinam, IN</p>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:16px;">
+          Served as the digital growth engine behind a GST billing SaaS product — driving qualified leads, reducing acquisition costs, and expanding regional product visibility through full-funnel strategies.
+        </p>
+        <ul style="color:var(--muted);line-height:2;padding-left:20px;margin-bottom:16px;">
+          <li>Built high-converting ad campaigns across Meta & Google for MSMEs, accountants, and retail users</li>
+          <li>Designed full-funnel strategies from ad creatives to landing pages to WhatsApp follow-ups</li>
+          <li>Collaborated with product & sales teams to align messaging with GST compliance needs</li>
+          <li>Implemented UTM structures, GA4 dashboards, and campaign automation</li>
+        </ul>
+        <div class="achievement-grid">
+          <div class="achievement">
+            <div class="achievement-value">3,000+</div>
+            <div class="achievement-label">Leads in 6 Months</div>
+          </div>
+          <div class="achievement">
+            <div class="achievement-value">-30%</div>
+            <div class="achievement-label">CPL Reduction</div>
+          </div>
+          <div class="achievement">
+            <div class="achievement-value">+60%</div>
+            <div class="achievement-label">Web Traffic Growth</div>
+          </div>
+          <div class="achievement">
+            <div class="achievement-value">↑</div>
+            <div class="achievement-label">Trial Conversions</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up">
+        <span class="timeline-date">JUNE 2024 – SEP 2024</span>
+        <h3 style="font-size:24px;font-weight:700;margin-bottom:4px;">Content Creator</h3>
+        <p style="color:var(--primary);margin-bottom:16px;"><i class="fas fa-building"></i> S-INFOTECH · Thiruvarur, IN</p>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:16px;">
+          Worked in a fast-paced creative agency designing high-performing visual content for diverse clients across tech, fashion, real estate, and education.
+        </p>
+        <ul style="color:var(--muted);line-height:2;padding-left:20px;margin-bottom:16px;">
+          <li>Created social media designs — static posts, carousels, reels covers, story creatives</li>
+          <li>Collaborated with copywriters, marketers, and client managers for cohesive campaigns</li>
+          <li>Incorporated modern design, meme culture, seasonal styles, and viral formats</li>
+          <li>Built creative asset library for faster turnaround and brand consistency</li>
+        </ul>
+        <div class="achievement-grid">
+          <div class="achievement">
+            <div class="achievement-value">15+</div>
+            <div class="achievement-label">Active Client Brands</div>
+          </div>
+          <div class="achievement">
+            <div class="achievement-value">4x</div>
+            <div class="achievement-label">Engagement Boost</div>
+          </div>
+          <div class="achievement">
+            <div class="achievement-value">5+</div>
+            <div class="achievement-label">Industries Served</div>
+          </div>
+          <div class="achievement">
+            <div class="achievement-value">-40%</div>
+            <div class="achievement-label">Turnaround Time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>Education</h2>
-<p>B.Sc Computer Science - Thiru.vi.ka Arts and Science College (Bharathidasan University)</p>
+<!-- Projects -->
+<section id="projects">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <span class="section-label" style="justify-content:center;">Portfolio</span>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">A glimpse of brands and campaigns I've helped grow through strategic marketing and design.</p>
+    </div>
+    <div class="project-grid">
+      <a href="https://www.instagram.com/posnicofficial" target="_blank" class="project-card" data-aos="fade-up">
+        <img src="https://image.qwenlm.ai/public_source/dfffe8dd-97f7-43c9-8f86-6eb0e41e8d3c/1a363e19a-06e0-4925-a99a-d2c94085d871.png" alt="POSNIC" class="project-img" />
+        <div class="project-overlay">
+          <div class="project-category">SaaS · Digital Marketing</div>
+          <div class="project-title">POSNIC GST Billing</div>
+          <div class="project-desc">Full-funnel marketing for a GST billing SaaS — 3,000+ leads, 30% CPL drop, 60% traffic growth.</div>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/anjana_kitchen_restaurant" target="_blank" class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://image.qwenlm.ai/public_source/dfffe8dd-97f7-43c9-8f86-6eb0e41e8d3c/19377452b-9cf2-4b1c-95c5-d93f65f199d0.png" alt="Restaurant" class="project-img" />
+        <div class="project-overlay">
+          <div class="project-category">F&B · Social Media</div>
+          <div class="project-title">Anjana Kitchen & Restaurant</div>
+          <div class="project-desc">Visual content strategy and social media design for a traditional South Indian restaurant brand.</div>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/kalammart_sg" target="_blank" class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://image.qwenlm.ai/public_source/dfffe8dd-97f7-43c9-8f86-6eb0e41e8d3c/167c8ac87-4330-4976-9ff6-f827b490ca15.png" alt="Kalam Mart" class="project-img" />
+        <div class="project-overlay">
+          <div class="project-category">Retail · Singapore</div>
+          <div class="project-title">Kalam Mart SG</div>
+          <div class="project-desc">Retail brand social media campaign with modern minimalist aesthetic and conversion-focused content.</div>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/mahana.sg" target="_blank" class="project-card" data-aos="fade-up">
+        <img src="https://image.qwenlm.ai/public_source/dfffe8dd-97f7-43c9-8f86-6eb0e41e8d3c/1849121c9-cfa5-424c-9327-c516643dad59.png" alt="Mahana SG" class="project-img" />
+        <div class="project-overlay">
+          <div class="project-category">Brand · Campaign</div>
+          <div class="project-title">Mahana Singapore</div>
+          <div class="project-desc">Integrated digital campaign across Meta & Google with localized content and performance tracking.</div>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/madrascoffeehousesg" target="_blank" class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div style="height:240px;background:linear-gradient(135deg,#a855f7,#ec4899);display:flex;align-items:center;justify-content:center;">
+          <i class="fas fa-mug-hot" style="font-size:60px;color:#fff;"></i>
+        </div>
+        <div class="project-overlay">
+          <div class="project-category">F&B · Singapore</div>
+          <div class="project-title">Madras Coffee House SG</div>
+          <div class="project-desc">Heritage coffee brand social presence with storytelling content and community engagement.</div>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/snehabistrobarsg" target="_blank" class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div style="height:240px;background:linear-gradient(135deg,#22d3ee,#a855f7);display:flex;align-items:center;justify-content:center;">
+          <i class="fas fa-utensils" style="font-size:60px;color:#fff;"></i>
+        </div>
+        <div class="project-overlay">
+          <div class="project-category">Bistro · Singapore</div>
+          <div class="project-title">Sneha Bistro Bar SG</div>
+          <div class="project-desc">Premium bistro brand identity with elegant visual content and targeted ad campaigns.</div>
+        </div>
+      </a>
+    </div>
+  </div>
 </section>
 
+<!-- Contact -->
+<section id="contact">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <span class="section-label" style="justify-content:center;">Get In Touch</span>
+      <h2 class="section-title">Let's Build <span class="gradient-text">Something Great</span></h2>
+      <p class="section-subtitle" style="margin:0 auto;">Have a project in mind? I'd love to hear about it. Drop me a message and let's create measurable results together.</p>
+    </div>
+    <div class="contact-grid">
+      <div data-aos="fade-right">
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <div style="font-size:12px;color:var(--muted);">Phone</div>
+            <div style="font-weight:600;">+91 76396 42940</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div style="font-size:12px;color:var(--muted);">Email</div>
+            <div style="font-weight:600;">muthuravichandran47@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div>
+            <div style="font-size:12px;color:var(--muted);">LinkedIn</div>
+            <div style="font-weight:600;">Muthamizhan R</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <div style="font-size:12px;color:var(--muted);">GitHub</div>
+            <div style="font-weight:600;">muthamizhan</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div style="font-size:12px;color:var(--muted);">Location</div>
+            <div style="font-weight:600;">Thiruvarur, Tamil Nadu, India</div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <form onsubmit="handleSubmit(event)" style="background:linear-gradient(145deg,rgba(23,23,42,0.7),rgba(18,18,31,0.7));border:1px solid var(--border);border-radius:20px;padding:32px;">
+          <h3 style="font-size:22px;font-weight:700;margin-bottom:8px;">Send a Message</h3>
+          <p style="color:var(--muted);font-size:14px;margin-bottom:24px;">I'll get back to you within 24 hours.</p>
+          <input type="text" class="form-input" placeholder="Your Name" required />
+          <input type="email" class="form-input" placeholder="Your Email" required />
+          <input type="text" class="form-input" placeholder="Subject" />
+          <textarea class="form-input" rows="5" placeholder="Tell me about your project..." required></textarea>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer>
-<p>Phone: +91 7639642940 | Email: muthuravichandran47@gmail.com</p>
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="margin-bottom:20px;">
+      <a href="https://www.linkedin.com/in/muthamizhanr/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/muthamizhan" class="social-link"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/confused_thinker404" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:muthuravichandran47@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>© 2026 Muthamizhan R. Thank you for visiting <i class="fas fa-heart" style="color:var(--accent);"></i></p>
+  </div>
 </footer>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
+
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.getElementById('menuOverlay').classList.toggle('open');
+  }
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      const top = s.offsetTop - 120;
+      if (scrollY >= top) current = s.getAttribute('id');
+    });
+    navLinks.forEach(l => {
+      l.classList.remove('active');
+      if (l.getAttribute('href') === '#' + current) l.classList.add('active');
+    });
+
+    // Scroll to top button
+    const btn = document.getElementById('scrollTop');
+    if (window.scrollY > 500) btn.classList.add('visible');
+    else btn.classList.remove('visible');
+  });
+
+  // Counter animation
+  const counters = document.querySelectorAll('[data-count]');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.getAttribute('data-count'));
+        let current = 0;
+        const increment = target / 60;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          el.textContent = Math.floor(current).toLocaleString() + (target >= 100 ? '+' : '+');
+        }, 25);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => counterObserver.observe(c));
+
+  // Form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button');
+    const original = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+    btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+    setTimeout(() => {
+      btn.innerHTML = original;
+      btn.style.background = '';
+      e.target.reset();
+    }, 2500);
+  }
+</script>
 </body>
 </html>
